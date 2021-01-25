@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": ["src/assets/js/smtp.js"]
+            "scripts": [
+              "src/assets/js/smtp.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -122,8 +124,13 @@
               "devServerTarget": "personal-portfolio-angular:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "personal-portfolio-angular"
 }
